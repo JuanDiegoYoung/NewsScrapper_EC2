@@ -1,0 +1,6 @@
+#!/bin/bash
+# Shortcut para ejecutar el scraper manualmente
+cd "$(dirname "$0")"
+source venv/bin/activate
+export $(grep -v '^#' .env | xargs)
+python src/scraper/scrape_and_summarize.py

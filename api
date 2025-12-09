@@ -1,0 +1,3 @@
+#!/bin/bash
+# Shortcut para iniciar la API
+./scripts/local/start_api.sh

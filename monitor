@@ -1,0 +1,3 @@
+#!/bin/bash
+# Shortcut para monitoreo completo
+./scripts/monitoring/monitor.sh

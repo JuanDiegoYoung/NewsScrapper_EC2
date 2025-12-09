@@ -1,0 +1,3 @@
+#!/bin/bash
+# Shortcut para ver el estado del sistema
+./scripts/local/status_service_mac.sh

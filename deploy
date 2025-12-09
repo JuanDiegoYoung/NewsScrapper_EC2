@@ -1,0 +1,3 @@
+#!/bin/bash
+# Shortcut para deployment a EC2
+./scripts/deployment/deploy_ec2.sh "$@"
