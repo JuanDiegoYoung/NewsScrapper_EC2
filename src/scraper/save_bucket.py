@@ -4,6 +4,11 @@ import os, io, json, datetime
 import boto3
 import sys
 from pathlib import Path
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv(override=True)
+
 sys.path.append(str(Path(__file__).parent.parent.parent))
 from config.logger_utils import logger
 from config.config import BUCKET as S3_BUCKET, PREFIX as S3_PREFIX

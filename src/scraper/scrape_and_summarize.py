@@ -6,6 +6,11 @@ from bs4 import BeautifulSoup
 import boto3
 import sys
 from pathlib import Path
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv(override=True)
+
 sys.path.append(str(Path(__file__).parent.parent.parent))
 from config.logger_utils import get_logger
 from src.scraper.save_bucket import upload_results_to_s3
