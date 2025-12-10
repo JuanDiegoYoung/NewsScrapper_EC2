@@ -6,7 +6,7 @@ Esta guía es para usuarios que quieren **consumir** la API de noticias financie
 
 ### URL de la API
 ```
-http://35.169.240.172:8000
+http://98.87.133.84:8000
 ```
 
 ### Credenciales
@@ -15,8 +15,8 @@ API Key: api-newscrapper-key01
 ```
 
 ### Documentación Interactiva
-- Swagger UI: http://35.169.240.172:8000/docs
-- ReDoc: http://35.169.240.172:8000/redoc
+- Swagger UI: http://98.87.133.84:8000/docs
+- ReDoc: http://98.87.133.84:8000/redoc
 
 ## 🚀 Primeros Pasos
 

@@ -2,7 +2,7 @@
 
 ## Lo Único que Necesitas Saber
 
-**URL**: `http://35.169.240.172:8000`  
+**URL**: `http://98.87.133.84:8000`  
 **API Key**: `api-newscrapper-key01`
 
 ## Uso Inmediato
@@ -10,20 +10,20 @@
 ### Opción 1: Desde la terminal (Mac/Linux)
 
 ```bash
-curl -H "X-API-Key: api-newscrapper-key01" http://35.169.240.172:8000/resumen/latest
+curl -H "X-API-Key: api-newscrapper-key01" http://98.87.133.84:8000/resumen/latest
 ```
 
 ### Opción 2: Python (3 líneas)
 
 ```python
 import requests
-r = requests.get("http://35.169.240.172:8000/resumen/latest", headers={"X-API-Key": "api-newscrapper-key01"})
+r = requests.get("http://98.87.133.84:8000/resumen/latest", headers={"X-API-Key": "api-newscrapper-key01"})
 print(r.json())
 ```
 
 ### Opción 3: Navegador (probar en vivo)
 
-Abre esto en tu navegador: http://35.169.240.172:8000/docs
+Abre esto en tu navegador: http://98.87.133.84:8000/docs
 
 1. Click en `GET /resumen/latest`
 2. Click en "Try it out"

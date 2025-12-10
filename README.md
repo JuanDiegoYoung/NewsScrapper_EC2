@@ -6,13 +6,13 @@ Scraper de noticias financieras con resumen automático usando OpenAI y almacena
 
 La API está desplegada y disponible públicamente en:
 
-**Base URL**: `http://35.169.240.172:8000`
+**Base URL**: `http://98.87.133.84:8000`
 
 ### Acceso Rápido
 
-- **Documentación Swagger**: http://35.169.240.172:8000/docs
-- **Documentación ReDoc**: http://35.169.240.172:8000/redoc
-- **Health Check**: http://35.169.240.172:8000/health
+- **Documentación Swagger**: http://98.87.133.84:8000/docs
+- **Documentación ReDoc**: http://98.87.133.84:8000/redoc
+- **Health Check**: http://98.87.133.84:8000/health
 
 ### Credenciales de Acceso
 
@@ -25,10 +25,10 @@ X-API-Key: api-newscrapper-key01
 
 ```bash
 # Obtener últimas noticias
-curl -H "X-API-Key: api-newscrapper-key01" http://35.169.240.172:8000/resumen/latest
+curl -H "X-API-Key: api-newscrapper-key01" http://98.87.133.84:8000/resumen/latest
 
 # Health check (público)
-curl http://35.169.240.172:8000/health
+curl http://98.87.133.84:8000/health
 ```
 
 Ver [Guía de Usuario](#-guía-de-usuario) más abajo para ejemplos completos.
@@ -161,7 +161,7 @@ Ver documentación completa: [docs/API_README.md](docs/API_README.md)
 #### 1. Verificar que la API está activa
 
 ```bash
-curl http://35.169.240.172:8000/health
+curl http://98.87.133.84:8000/health
 ```
 
 Respuesta esperada: `{"status":"healthy"}`
@@ -170,21 +170,21 @@ Respuesta esperada: `{"status":"healthy"}`
 
 ```bash
 curl -H "X-API-Key: api-newscrapper-key01" \
-  http://35.169.240.172:8000/resumen/latest
+  http://98.87.133.84:8000/resumen/latest
 ```
 
 #### 3. Obtener noticias de una fecha específica
 
 ```bash
 curl -H "X-API-Key: api-newscrapper-key01" \
-  http://35.169.240.172:8000/resumen/2025-12-09
+  http://98.87.133.84:8000/resumen/2025-12-09
 ```
 
 #### 4. Ver histórico completo
 
 ```bash
 curl -H "X-API-Key: api-newscrapper-key01" \
-  http://35.169.240.172:8000/historico
+  http://98.87.133.84:8000/historico
 ```
 
 #### 5. Usar desde Python
@@ -213,7 +213,7 @@ for articulo in noticias['articulos']:
 #### 6. Usar desde JavaScript/Node.js
 
 ```javascript
-const API_URL = "http://35.169.240.172:8000";
+const API_URL = "http://98.87.133.84:8000";
 const API_KEY = "api-newscrapper-key01";
 
 async function obtenerNoticias() {

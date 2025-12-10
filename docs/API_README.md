@@ -6,13 +6,13 @@ API REST para acceder a noticias financieras scrapeadas y resumidas por OpenAI.
 
 ### URL Base
 ```
-http://35.169.240.172:8000
+http://98.87.133.84:8000
 ```
 
 ### Documentación Interactiva
 
-- **Swagger UI**: http://35.169.240.172:8000/docs
-- **ReDoc**: http://35.169.240.172:8000/redoc
+- **Swagger UI**: http://98.87.133.84:8000/docs
+- **ReDoc**: http://98.87.133.84:8000/redoc
 
 ### Credenciales
 
@@ -26,7 +26,7 @@ API Key: api-newscrapper-key01
 
 ```bash
 # Verificar que la API está activa
-curl http://35.169.240.172:8000/health
+curl http://98.87.133.84:8000/health
 ```
 
 Respuesta esperada:
@@ -65,7 +65,7 @@ La API key se obtiene automáticamente de:
 **Producción:**
 ```bash
 curl -H "X-API-Key: api-newscrapper-key01" \
-  http://35.169.240.172:8000/resumen/latest
+  http://98.87.133.84:8000/resumen/latest
 ```
 
 **Local:**
