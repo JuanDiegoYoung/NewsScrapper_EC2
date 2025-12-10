@@ -44,16 +44,15 @@ StandardError=append:$WORKING_DIR/logs/scraper_error.log
 WantedBy=multi-user.target
 EOF
 
-# 2. Crear timer systemd (ejecutar cada 6 horas)
+# 2. Crear timer systemd (ejecutar diariamente a las 9 AM hora Uruguay)
 echo -e "${GREEN}⏰ Creando timer...${NC}"
 sudo tee /etc/systemd/system/newscrapper-ec2.timer > /dev/null << 'EOF'
 [Unit]
-Description=NewsScrapperEC2 Timer - Run every 6 hours
+Description=NewsScrapperEC2 Timer - Run daily at 9 AM Uruguay Time (12 PM UTC)
 Requires=newscrapper-ec2.service
 
 [Timer]
-OnBootSec=5min
-OnUnitActiveSec=6h
+OnCalendar=*-*-* 12:00:00
 Persistent=true
 
 [Install]
